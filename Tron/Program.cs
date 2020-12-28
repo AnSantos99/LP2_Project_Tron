@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 
 namespace Tron
 {
@@ -6,7 +7,11 @@ namespace Tron
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            while (true)
+            {
+                Console.WriteLine(".");
+                Thread.Sleep(500);
+            }
         }
     }
 }
